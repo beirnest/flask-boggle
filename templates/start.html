@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}Start game{% endblock %}
+
+{% block content %}
+    <button id="start" class="hud">Start</button>
+    <span id="timer" class="hud"></span>
+    <form>
+        Submit a word: <input type="text" id ="guess" name = "guess">
+        <button type="submit" id="submit">Submit</button>
+    </form>
+
+    <table>
+        {% for row in board %}
+            <tr>
+                {% for space in row %}
+                    <td>{{ space }}</td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </table>
+    <div id="results"></div>
+{% endblock %}

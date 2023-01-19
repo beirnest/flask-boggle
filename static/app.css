@@ -1,0 +1,23 @@
+table {
+    margin-left: 28%;
+}
+
+td {
+    border: 1px solid black;
+    height: 5em;
+    width: 5em;
+    text-align: center;
+    font-size: 2em;
+}
+
+form {
+    margin-left: 40%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.hud {
+    margin-left: 50%;
+}
